@@ -10,7 +10,6 @@
   border: 1px solid #a8adb2;
   border-radius: 4px;
   padding: 12px;
-  justify-content: center;
 }
 
 .App {
@@ -18,14 +17,7 @@
   text-align: center;
 }
 
-input {
-  border: 2px solid grey;
-  border-radius: 4px;
-  margin: o auto;
-}
-
 footer {
-  position: relative;
   font-size: 12px;
 }
 
