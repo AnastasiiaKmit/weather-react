@@ -1,0 +1,25 @@
+strong {
+  color: rgb(33, 33, 33);
+  font-size: 64px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+li {
+  text-align: start;
+}
+
+.units {
+  position: relative;
+  font-size: 16px;
+  top: -34px;
+}
+
+@media (max-width: 900px) {
+  strong {
+    font-size: 42px;
+  }
+  .units {
+    top: -20px;
+  }
+}

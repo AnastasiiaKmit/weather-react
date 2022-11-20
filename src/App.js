@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
 
-function App() {
+import "./app.css";
+import Temperature from "./Temperature";
+
+export default function App() {
+  let [city, setCity] = useState("");
+  function handleSubmit(event) {
+    event.preventDefault();
+    console.log({ city });
+  }
+  function updateCity(event) {
+    setCity(event.target.value);
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="mb-3">
+        <form onSubmit={handleSubmit}>
+          <div className="row">
+            <div className="col-9">
+              <input
+                type="search"
+                className="form-control"
+                autoComplete="off"
+                placeholder="Type a city..."
+                onChange={updateCity}
+              />
+            </div>
+            <div className="col-3">
+              <input
+                type="submit"
+                className="btn btn-primary w-100"
+                value="Search"
+              />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <Temperature city={city} />
     </div>
   );
 }
-
-export default App;
