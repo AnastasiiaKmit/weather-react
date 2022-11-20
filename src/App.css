@@ -10,6 +10,7 @@
   border: 1px solid #a8adb2;
   border-radius: 4px;
   padding: 12px;
+  justify-content: center;
 }
 
 .App {
@@ -23,8 +24,14 @@ input {
   margin: o auto;
 }
 
+footer {
+  position: relative;
+  font-size: 12px;
+}
+
 @media (max-width: 900px) {
   .container {
     margin: 10px 30px;
+    width: 400px;
   }
 }

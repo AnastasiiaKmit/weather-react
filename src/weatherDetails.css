@@ -30,12 +30,16 @@ li {
 
 @media (max-width: 900px) {
   h1 {
-    font-size: 42px;
+    font-size: 27px;
   }
   strong {
-    font-size: 42px;
+    font-size: 32px;
   }
   .units {
     top: -20px;
+    font-size: 10px;
+  }
+  li {
+    font-size: 12px;
   }
 }
